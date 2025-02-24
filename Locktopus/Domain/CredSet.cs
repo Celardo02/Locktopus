@@ -8,7 +8,7 @@ public class CredSet : ICredSet<string>
     #region Private Attributes
     private string _id;
     private string _pwd; 
-    private DateTime _exp;
+    private DateOnly _exp;
     private string? _usr;
     private string? _email;
     private string? _freeTxt;
@@ -21,7 +21,7 @@ public class CredSet : ICredSet<string>
     #endregion
 
     #region Constructors
-    public CredSet(string id, string pwd, DateTime exp, string? usr = null, string? email = null, string? freeTxt = null, List<string>? labels = null)
+    public CredSet(string id, string pwd, DateOnly exp, string? usr = null, string? email = null, string? freeTxt = null, List<string>? labels = null)
     {
         this._id = id;
         this._pwd = pwd;
@@ -57,11 +57,11 @@ public class CredSet : ICredSet<string>
         // setting new expiration date each time a new password is set
         set {
                 this._pwd = value;
-                this._exp = DateTime.Today;
+                this._exp = DateOnly.FromDateTime(DateTime.Today);
                 this._exp = this._exp.AddMonths(EXP_TIME);
             }
     }
-    public DateTime Exp 
+    public DateOnly Exp 
     { 
         get => this._exp; 
         set => this._exp = value; 

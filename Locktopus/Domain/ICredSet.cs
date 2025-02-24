@@ -22,7 +22,7 @@ public interface ICredSet<ID>
     /// <summary>
     /// Password expiration date
     /// </summary>
-    DateTime Exp {get; set;}
+    DateOnly Exp {get; set;}
 
     /// <summary>
     /// Username
