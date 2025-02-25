@@ -3,7 +3,7 @@ using System;
 namespace Locktopus.Domain;
 
 /// <summary>
-/// Interfaces that represents a master password class
+/// Master password class interface
 /// </summary>
 public interface IMstPwd
 {

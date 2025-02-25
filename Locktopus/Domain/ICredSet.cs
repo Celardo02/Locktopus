@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Locktopus.Domain;
 
 /// <summary>
-/// Interface that represents a credential set class
+/// Credential set class interface
 /// </summary>
 /// <typeparam name="ID">Type of the field <c>Id</c></typeparam>
 public interface ICredSet<ID>
