@@ -4,6 +4,9 @@ using Locktopus.Domain;
 
 namespace Locktopus.Persistence;
 
+/// <summary>
+/// Master password persistence interface
+/// </summary>
 public interface IPersMstPwd : IPersRAM
 {
     /// <summary>
