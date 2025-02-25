@@ -33,10 +33,10 @@ public interface IPersMstPwd : IPersRAM
     /// <summary>
     /// Current master password object
     /// </summary>
-    IMstPwd MasterPwd {get; set;}
+    IMstPwd MasterPwd {get;}
 
     /// <summary>
     /// List with old master paswords
     /// </summary>
-    List<string>? OldMstPwd {get; set;}
+    List<string>? OldMstPwd {get;}
 }
