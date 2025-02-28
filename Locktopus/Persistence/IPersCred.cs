@@ -62,6 +62,15 @@ public interface IPersCred<ID> : IPersRAM
     List<ICredSet<ID>> ListAll();
 
     /// <summary>
+    /// Imports a list of credential sets and replaces the existing stored data
+    /// </summary>
+    /// <param name="lc">List of credential sets to be imported</param>
+    /// <remarks>
+    /// The imported list will overwrite the currently persisted data.
+    /// </remarks>
+    void LoadCreds(List<ICredSet<ID>> lc);
+
+    /// <summary>
     /// Searches for any expired credential set
     /// </summary>
     /// <returns>Returns a list of expired credential sets, if they exist</returns>
