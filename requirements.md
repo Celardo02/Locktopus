@@ -166,7 +166,6 @@ Each time that one of those algorithms is cited in the text below, its requireme
 1. peer to peer communication during vault synching operations must:
     1. be encrypted using RSA algorithm to exchange an OTP
     2. use the OTP to cypher the vault using AES before sending 
-    3. sign encrypted vault file sent using the private RSA key of the sender
 2. a timestamp must be included as AAD inside the AES
     1. any vault sent 1 minute before or earlier must be ignored 
 3. sender must generate a random OTP (here called _vault tag_ for simplicity) for each communication
