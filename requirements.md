@@ -13,7 +13,7 @@
     - [Miscellaneous](#miscellaneous)
 - [Non-Functional Requirements](#non-functional-requirements)
     - [Encryption Algorithms Requirements](#encryption-algorithms-requirements)
-    - [Master Password and Credential Sets Security](#master-password-and-credential-sets-security)
+    - [Master Password Security](#master-password-security)
     - [User Interfaces Security](#user-interfaces-security)
         - [Login Security](#login-security)
         - [Credential Sets Handling Security](#credential-sets-handling-security)
@@ -88,7 +88,7 @@ Credential sets handling interface must allow the user to:
     - e-mail (this field must be empty if the e-mail does not exist)
     - username (this field must be empty if the username does not exist)  
     - expiration date/warning 
-Plain text password and free text fields must be shown shown on user demand
+Plain text password and free text fields must be shown on user demand
 8. look for one or more credential sets typing a string that may be in id, username and/or e-mail fields
 9. group credential sets by a specific label
 10. order credential sets by id, username, e-mail or expiration date
@@ -146,7 +146,7 @@ Each time that one of those algorithms is cited in the text below, its requireme
 1. master password must be stored as its corresponding hash
     1. hash must be computed using PBKDF2 
 2. master password must be different from previous ones, if changed 
-    1. old master password must be encrypted with the current one
+
 
 ## User Interfaces Security 
 
