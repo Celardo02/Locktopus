@@ -7,7 +7,7 @@ namespace Locktopus.Persistence;
 /// <summary>
 /// Master password persistence interface
 /// </summary>
-public interface IPersMstPwd : IPersRAM
+public interface IPersMstPwd : IDisposable
 {
     /// <summary>
     /// Checks whether a provided string matches the stored master password hash

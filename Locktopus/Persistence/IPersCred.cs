@@ -8,7 +8,7 @@ namespace Locktopus.Persistence;
 /// Credential sets persistence interface
 /// </summary>
 /// <typeparam name="ID">Type of credetial set Id</typeparam>
-public interface IPersCred<ID> : IPersRAM
+public interface IPersCred<ID> : IDisposable
 {
     /// <summary>
     /// Creates a credential set instance
